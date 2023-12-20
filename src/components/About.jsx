@@ -1,9 +1,10 @@
 import React from 'react'
+import Test from './Test'
 
 const About = () => {
   return (
     <div>
-      about
+      <Test/>
     </div>
   )
 }

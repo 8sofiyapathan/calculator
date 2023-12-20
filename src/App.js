@@ -1,18 +1,31 @@
 import 'bootstrap/dist/css/bootstrap.min.css'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Calsi from './components/Calsi'
 import Footer from './components/Footer'
 import Nav from './components/Nav'
-import Test from './components/Test'
-
+import About from './components/About'
+import Contact from './components/Contact'
 
 const App = () => {
   return (
-    <div>
+      <>
+      <BrowserRouter>
       <Nav/>
-      <Calsi/>
+      <Routes>
+      <Route path='/' element = {<Calsi/>}/>
+      <Route path='/about' element = {<About/>}/>
+      <Route path='/contact' element = { <Contact/>}/>    
+      </Routes>
       <Footer/>
-      <Test/>
-    </div>
+      </BrowserRouter>
+     
+      {/* <Nav/>
+      <Calsi/>
+      <About/>
+      <Contact/>
+      <Footer/>
+      <Test/> */}
+      </>
   )
 }
 

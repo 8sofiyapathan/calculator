@@ -24,15 +24,14 @@ const Test = () => {
     }
 
     return (
-        <div className={`fs-1 d-flex justify-content-center align-item-center ${lightMode ? '' : 'bg-dark'}`}>
-            <button className={`btn ${lightMode ? 'btn-dark' : 'btn-light'} position-absolute top-0 m-3`} onClick={toggleMode}>{`${lightMode ? 'Dark Mode' : 'Light Mode'}`}</button>
+        <div className={`fs-1 d-flex justify-content-center align-item-center  ${lightMode ? '' : 'bg-dark'}`}>
+            <button className={`btn ${lightMode ? 'btn-dark' : 'btn-light'} position-absolute vh-50 top-0 m-3`} onClick={toggleMode}>{`${lightMode ? 'Dark Mode' : 'Light Mode'}`}</button>
 
-            <button className={`btn ${lightMode ? 'btn-dark' : 'btn-light'} fs-1 mx-5 px-5`} onClick={() => decreaseCount()}>-</button>
+            <button className={`btn ${lightMode ? 'btn-dark' : 'btn-light'} fs-1  mx-5 px-5`} onClick={() => decreaseCount()}>-</button>
 
 
             <div className={`${lightMode ? 'text-dark' : 'text-light'}`}>{count}</div>
             <button className={`btn ${lightMode ? 'btn-dark' : 'btn-light'} fs-1 mx-5 px-5`} onClick={() => increaseCount()}>+</button>
-
         </div>
     )
 }
